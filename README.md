@@ -1,4 +1,5 @@
-# Entrega3JovenesTalento
+# Entrega 3 Jovenes Talento
+## Descuentos asignados por consumo promedio.
 
 El programa almacena una matriz de clientes con sus consumos de energía (en Kwh) de los últimos seis meses. Esta lista puede ser actualizada a partir de un formulario
 que recibe valores numéricos, donde todos los campos deben ser completados.
