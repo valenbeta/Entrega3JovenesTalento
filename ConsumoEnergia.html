@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo de energía</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    
+</head>
+
+<body>
+    <header>
+        <br>
+        <h1>Consumo de energía de los clientes (Kwh)</h1>
+        <p></p>
+    </header>
+
+    
+    <section class="contenedorPrincipal">
+        <section class="agregarCliente">
+            <h2>Agregar cliente</h2>
+            <p>Ingresa el consumo (en Kwh) del cliente en los últimos seis meses.</p>
+            <form class="tablas" id="form">
+                
+                <div>
+                    <label for="InputM1">Mes 1:</label>
+                    <input type="number" id="InputM1">
+                    
+                </div>
+                <div>
+                    <label for="InputM2">Mes 2:</label>
+                    <input type="number" id="InputM2">
+                    
+                </div>
+                <div>
+                    <label for="InputM3">Mes 3:</label>
+                    <input type="number" id="InputM3">
+                    
+                </div>
+                <div>
+                    <label for="InputM4">Mes 4:</label>
+                    <input type="number" id="InputM4" default="0">
+                    
+                </div>
+                <div>
+                    <label for="InputM5">Mes 5:</label>
+                    <input type="number" id="InputM5">
+                    
+                </div>
+                <div>
+                    <label for="InputM6">Mes 6:</label>
+                    <input type="number" id="InputM6">
+                    
+                </div>           
+                <button type="button" onclick="onClickButtonAgregarCliente()">Agregar cliente</button>
+                
+            </form>
+            <!-- <p id="Mensaje"></p> -->
+        </section>
+    
+        <section class="generarTablas">
+            
+            <div class="tablas" id="historico">
+                <h2>Historico</h2>
+                <button type="button" id="botonGenerarTablahistorico" onclick='generarTabla1(listaConsumo,"historico")'>Generar tabla histórico consumo</button>
+            </div>
+    
+            <div class="tablas" id="descuentos">
+                <h2>Descuentos</h2>
+                <button type="button" id="botonGenerarTabladescuentos" onclick='generarTabla1(listaDescuento,"descuentos")'>Generar tabla descuentos</button>
+            </div>
+        </section>
+    </section>
+
+    
+    
+
+<script src="scripts/ConsumoEnergia.js"></script>
+</body>
+</html>
